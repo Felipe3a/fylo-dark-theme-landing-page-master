@@ -175,20 +175,20 @@ aside {
   transform: scale(1.1);
   transition: 0.3s;
 }
+
 .depoimentos {
   position: relative; /* necessário para posicionar #aspas em relação a .depoimentos */
   display: flex;
   flex-direction: row;
   justify-content: center;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
   background-color: hsl(218, 28%, 13%);
-  gap: 20px;
+  gap: 2vh;
   align-items: center;
   text-align: start;
   font-size: 12px;
-  padding: 20px;
-  height: 30%;
-
+  padding: 2vw;
+  height: 50vw;
 }
 
 .card2 {
@@ -197,52 +197,157 @@ aside {
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  gap: 20px;
+  gap: 2vw;
   background-color: hsl(219, 30%, 18%);
   border-radius: 5px;
-  width: 90%;
-  max-width: 300px;
-  margin-top: 100px;
+  width: 25vw;
+  height: 15vw;
+  /*max-width: 300vw;*/
+  margin-top: 23vh;
+  margin-right: 1vw;
   padding: 20px;
   z-index: 1;
+  flex-wrap: nowrap;
 }
 #aspas {
   position: absolute;
-  top: 39%;     /* Posição relativa à altura do container */
-  left: 4%;    /* Ajustável conforme largura do container */
-  width: 10vw;  /* Responsivo com base na largura da viewport */
-  max-width: 50px;
+  top: 41%; /* Posição relativa à altura do container */
+  left: 8.5%; /* Ajustável conforme largura do container */
+  width: 10vw; /* Responsivo com base na largura da viewport */
+  max-width: 9vh;
   z-index: 0;
 }
 
-
-
 .card2 img {
-  width: 50px;
-  height: 50px;
+  width: 10vh;
+  height: 10vh;
   border-radius: 50%;
- 
 }
 .perfil {
- 
-display: flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   text-align: start;
   width: 100%;
   padding-bottom: 20px;
-  
-justify-content: start;
-  gap: 20px;
 
+  justify-content: start;
+  gap: 20px;
 }
-.perfil h3{
+.perfil h3 {
   align-items: center;
 }
 
+
+
+
+
+
 footer {
-  flex: 1 1 100vw;
+
+  color: white;
+  padding: 40px 20px;
+  font-size: 10px;
+  height: 500px;
+  width: 100% ;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+  background-color: hsl(216, 53%, 9%);
+  gap: 0.1vh;
+  align-items: center;
+  text-align: start;
+  font-size: 12px;
+  padding: 2vw;
+  height: 50vw;
 }
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo
+{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 10%; /* controla a largura máxima de forma proporcional */
+  
+  word-wrap: break-word; /* quebra palavras longas, se necessário */
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* distribui o espaço igualmente */
+  align-items: flex-start;
+  gap: 10px; /* espaço entre as colunas */
+  flex-wrap: nowrap; /* garante que fiquem lado a lado */
+
+}
+
+
+
+.footer-logo .txt {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-logo .txt img {
+  width: 20px;
+  height: auto;
+  align-self: flex-start;
+}
+
+
+/* Remove bolinha dos itens da lista */
+.footer-nav ul,.footer-links ul  {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+ display: block;         /* Garante que o item ocupe toda a linha */
+  margin-bottom: 10px;    /* Espaço entre os itens */
+  white-space: nowrap;
+      /* Impede quebra de linha dentro das palavras */
+}
+
+
+/* Estiliza os links dentro dos itens da lista */
+.footer-nav, .footer-links ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+.redes-sociais {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.redes-sociais a img {
+  width: 25px;
+  height: 25px;
+}
+
+
+
 
 @media only screen and (max-width: 923px) {
   main {
@@ -255,6 +360,9 @@ footer {
 
   footer {
     order: 3;
+  }
+  .depoimentos {
+    flex-direction: column;
   }
 }
 
@@ -286,5 +394,108 @@ footer {
     display: none;
     opacity: 0;
     transition: 0.3s;
+  }
+
+  .card2 {
+    width: 90vw; /* Usa quase toda a tela menor */
+    height: auto; /* Altura automática */
+    margin-top: 20px; /* Reduz o espaçamento vertical */
+    margin-right: 0; /* Remove o espaçamento lateral */
+    padding: 20px;
+    gap: 20px;
+  }
+
+  #aspas {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40px;
+    max-width: none;
+    margin: 10px 0;
+  }
+
+  .depoimentos {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .body {
+    background-color: black;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card2 {
+    width: 90vw; /* Usa quase toda a tela menor */
+    height: auto; /* Altura automática */
+    margin-top: 20px; /* Reduz o espaçamento vertical */
+    margin-right: 0; /* Remove o espaçamento lateral */
+    padding: 20px;
+    gap: 20px;
+  }
+
+  #aspas {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40px;
+    max-width: none;
+    margin: 10px 0;
+  }
+
+  .depoimentos {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card2 {
+    width: 90vw; /* Usa quase toda a tela menor */
+    height: auto; /* Altura automática */
+    margin-top: 20px; /* Reduz o espaçamento vertical */
+    margin-right: 0; /* Remove o espaçamento lateral */
+    padding: 20px;
+    gap: 20px;
+  }
+
+  #aspas {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40px;
+    max-width: none;
+    margin: 10px 0;
+  }
+
+  .depoimentos {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
+/* Responsivo para telas maiores */
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo,
+  .contacts,
+  .footer-menu {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .footer-links,
+  .footer-nav {
+    flex: 1;
+  }
+
+  .redes-sociais {
+    justify-content: flex-start;
   }
 }
