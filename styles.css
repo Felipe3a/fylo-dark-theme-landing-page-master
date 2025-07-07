@@ -9,6 +9,14 @@
   color: white;
 }
 
+ .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+:root{
+--cyan: hsl(176,68%,64%);
+
+
+
+}
 body {
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +53,7 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: hsl(176, 68%, 64%);
+  color: var(--cyan);
   transform: scale(1.005);
   text-decoration: underline;
 }
@@ -114,6 +122,7 @@ section {
 
   border-radius: 20px;
 }
+
 
 .services {
   display: grid;
@@ -346,12 +355,70 @@ footer {
   height: 25px;
 }
 
+.contato {
+  position: fixed;
+  bottom: 20px;
+  left: auto;
+  transform: translateX(-50%) translateY(50px);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+  background-color: hsl(217, 28%, 15%);
+  padding: 40px 20px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: all 0.5s ease;
+  margin-bottom: 100px;
 
+}
 
+.contato p {
+  width: 100%;
+  font-size: 14px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contato input {
+  border-radius: 20px;
+  height: 40px;
+  width: 60%;
+  padding: 0 15px;
+  color: black;
+  border: none;
+}
+
+.contato button {
+  background-color: hsl(198, 60%, 50%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+}
 
 @media only screen and (max-width: 923px) {
   main {
     order: 1;
+  }
+  .hero{
+      background: url("images/bg-curvy-mobile.svg") no-repeat bottom;
+ background-color: hsl(217, 28%, 15%);
+
+    
+
   }
   aside {
     order: 2;

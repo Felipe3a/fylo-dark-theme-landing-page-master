@@ -145,6 +145,22 @@
           </div>
         </div>
       </section>
+
+<span class="contato" id="popup-contato">
+
+
+
+  <h1> Get early access today</h1>
+  <p> It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+  questions, our support team would be happy to help you.</p>
+
+  <div class="form">
+<input type="email" id="email" name="email"   />
+ <button>Get Started For Free</button> 
+ </div>
+
+</span>
+
     </main>
 
 
@@ -221,6 +237,21 @@
       </div>
 
     </footer>
+<script>
+  const popupContato = document.getElementById("popup-contato");
+  const footer = document.querySelector("footer");
+
+  window.addEventListener("scroll", () => {
+    const footerTop = footer.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (footerTop <= windowHeight) {
+      popupContato.style.opacity = "1";
+      popupContato.style.transform = "translateY(0)";
+      popupContato.style.pointerEvents = "auto";
+    }
+  });
+</script>
 
 
   </body>

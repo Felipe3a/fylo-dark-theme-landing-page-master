@@ -1,0 +1,113 @@
+
+
+.form-container {
+
+background: linear-gradient(180deg, rgba(24,31,42,1)50%, rgba(11,21,35,1)50%);
+padding-bottom: 4rem;
+
+}
+
+.form-access{
+background-color:var(--dark-blue);
+max-width: 800px;
+padding: 1.5rem 3rem;
+margin:auto;
+
+}
+
+.form-access .info{
+
+margin-bottom:2rem ;
+text-align: center;
+
+
+
+}
+ .form-access form {
+ 
+display: flex;
+grid-template-columns: 3fr 1fr;
+gap: 1.5rem;
+ }
+
+
+ .form-access  form input{
+width: 100%;
+border-radius: 1.75rem;
+padding: 1rem 2rem;
+border: 0;
+
+ }
+
+.form-access  form button{
+
+cursor: pointer;
+background:linear-gradient(90deg, var(--cyan)0%, var(--blue)100%);
+color: var(--white);
+font-weight: bold;
+border-radius: 1.75rem;
+border: 0;
+
+}
+
+.form-access .email-error {
+display: none;
+color: var(--light-red);
+
+}
+.form-access  .email-error.active{
+  display: block;
+}
+
+
+:root{
+--dark-blue:  hsl(217, 28%, 15%);
+--dark-blue-bg: hsl(218, 28%, 13%);
+--dark-blue-footer: hsl(216, 53%, 9%);
+--dark-blue-testimonial:hsl(219, 30%, 18%);
+
+
+--cyan:hsl(176, 68%, 64%);
+--blue: hsl(198, 60%, 50%);
+--light-red: hsl(0, 100%, 63%);
+--white: hsl(0, 0%, 100%);
+
+
+}
+
+
+
+
+
+      <div class="form-container">
+        <div class="form-access">
+      
+          <div class="info">
+            <h1>Get early access today</h1>
+            <p>
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </div>
+
+ <div class="email"></div>
+          <form>
+
+
+           
+              <input type="email" id="email" name="email" placeholder="Digite seu email" />
+              <button id="submit-form" type="submit">Get Started For Free</button>
+          </form>
+
+
+          <p id="email-error" class="email-error"> Please enter a valid amail address</p>
+        </div>
+
+
+
+      </div>
+    
+
+
+
