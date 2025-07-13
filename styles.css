@@ -11,17 +11,36 @@
 
  .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-:root{
---cyan: hsl(176,68%,64%);
 
+:root{
+--dark-blue:  hsl(217, 28%, 15%);
+--dark-blue-bg: hsl(218, 28%, 13%);
+--dark-blue-footer: hsl(216, 53%, 9%);
+--dark-blue-testimonial:hsl(219, 30%, 18%);
+
+
+--cyan:hsl(176, 68%, 64%);
+--blue: hsl(198, 60%, 50%);
+--light-red: hsl(0, 100%, 63%);
+--white: hsl(0, 0%, 100%);
 
 
 }
-body {
-  display: flex;
-  flex-wrap: wrap;
 
-  flex: 1 1 100vw;
+
+
+
+body {
+background-color: var(--dark-blue);
+  color: var();
+  font-family: 'Opens Sans';
+  line-height: 1.6;
+}
+
+img{
+
+
+
 }
 header,
 nav,
@@ -84,11 +103,12 @@ section {
   align-items: center;
   text-align: center;
 
-  background: url("images/bg-curvy-desktop.svg") no-repeat bottom;
-  background-position: cover;
-  width: 100%;
-  background-color: hsl(217, 28%, 15%);
-  background-size: 1500px;
+background: url("images/bg-curvy-desktop.svg") no-repeat center;
+background-repeat: no-repeat;
+min-height: 1000px;
+background-position: bottom;
+background-size: 100% 500px;
+  
 }
 
 .hero img {
@@ -343,6 +363,18 @@ footer {
   margin-bottom: 10px;
 }
 
+.footer-links  :hover{
+
+color: var(--cyan);
+
+
+}
+
+.contacts :hover{
+  color: var(--cyan);
+}
+
+
 
 .redes-sociais {
   display: flex;
@@ -350,9 +382,41 @@ footer {
   justify-content: center;
 }
 
-.redes-sociais a img {
+.redes-sociais i  {
   width: 25px;
   height: 25px;
+}
+.social {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  font-size: 28px;
+   
+
+}
+
+.social a {
+
+
+  text-decoration: none;
+  margin: 10px;
+
+}
+
+.social:hover a i{
+
+  opacity: 0.3;
+  transition: 0.5s;
+
+}
+
+.social:hover a:hover i:hover{
+color: var(--cyan);
+  opacity: 1;
+  transition: 0.5s;
+
 }
 
 .contato {
