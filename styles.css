@@ -9,8 +9,13 @@
   color: white;
 }
 
- .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 a:focus,
 button:focus,
 input:focus {
@@ -19,35 +24,29 @@ input:focus {
   transition: outline 0.2s ease;
 }
 
-:root{
---dark-blue:  hsl(217, 28%, 15%);
---dark-blue-bg: hsl(218, 28%, 13%);
---dark-blue-footer: hsl(216, 53%, 9%);
---dark-blue-testimonial:hsl(219, 30%, 18%);
+:root {
+  --dark-blue: hsl(217, 28%, 15%);
+  --dark-blue-bg: hsl(218, 28%, 13%);
+  --dark-blue-footer: hsl(216, 53%, 9%);
+  --dark-blue-testimonial: hsl(219, 30%, 18%);
 
-
---cyan:hsl(176, 68%, 64%);
---blue: hsl(198, 60%, 50%);
---light-red: hsl(0, 100%, 63%);
---white: hsl(0, 0%, 100%);
-
-
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --light-red: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
 }
 
-
-
-
 body {
-background-color: var(--dark-blue);
+  background-color: var(--dark-blue);
   color: var(--white);
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   line-height: 1.6;
 }
 
-img{
-
-
-
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 header,
 nav,
@@ -110,12 +109,11 @@ section {
   align-items: center;
   text-align: center;
 
-background: url("images/bg-curvy-desktop.svg") no-repeat center;
-background-repeat: no-repeat;
-min-height: 1000px;
-background-position: bottom;
-background-size: 100% 500px;
-  
+  background: url("images/bg-curvy-desktop.svg") no-repeat center;
+  background-repeat: no-repeat;
+  min-height: 1000px;
+  background-position: bottom;
+  background-size: 100% 500px;
 }
 
 .hero img {
@@ -149,7 +147,6 @@ background-size: 100% 500px;
 
   border-radius: 20px;
 }
-
 
 .services {
   display: grid;
@@ -274,44 +271,37 @@ aside {
   align-items: center;
 }
 
-
-
-
-
-
 footer {
-
   color: white;
   padding: 40px 20px;
   font-size: 10px;
 
-  width: 100% ;
+  width: 100%;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
- 
+
   background-color: hsl(216, 53%, 9%);
   gap: 0.1vh;
   align-items: center;
   text-align: start;
   font-size: 12px;
   padding: 2vw;
-  height: 50vw;
+  height: 35vw;
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  
+
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.footer-logo
-{
+.footer-logo {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -322,7 +312,7 @@ footer {
   flex-direction: column;
   gap: 15px;
   max-width: 10%; /* controla a largura máxima de forma proporcional */
-  
+
   word-wrap: break-word; /* quebra palavras longas, se necessário */
 }
 
@@ -333,10 +323,7 @@ footer {
   align-items: flex-start;
   gap: 10px; /* espaço entre as colunas */
   flex-wrap: nowrap; /* garante que fiquem lado a lado */
-
 }
-
-
 
 .footer-logo .txt {
   display: flex;
@@ -349,39 +336,34 @@ footer {
   align-self: flex-start;
 }
 
-
 /* Remove bolinha dos itens da lista */
-.footer-nav ul,.footer-links ul  {
+.footer-nav ul,
+.footer-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
- display: block;         /* Garante que o item ocupe toda a linha */
-  margin-bottom: 10px;    /* Espaço entre os itens */
+  display: block; /* Garante que o item ocupe toda a linha */
+  margin-bottom: 10px; /* Espaço entre os itens */
   white-space: nowrap;
-      /* Impede quebra de linha dentro das palavras */
+  /* Impede quebra de linha dentro das palavras */
 }
 
-
 /* Estiliza os links dentro dos itens da lista */
-.footer-nav, .footer-links ul li a {
+.footer-nav,
+.footer-links ul li a {
   text-decoration: none;
   color: white;
   display: block;
   margin-bottom: 10px;
 }
 
-.footer-links  :hover{
-
-color: var(--cyan);
-
-
-}
-
-.contacts :hover{
+.footer-links :hover {
   color: var(--cyan);
 }
 
-
+.contacts :hover {
+  color: var(--cyan);
+}
 
 .redes-sociais {
   display: flex;
@@ -389,41 +371,32 @@ color: var(--cyan);
   justify-content: center;
 }
 
-.redes-sociais i  {
+.redes-sociais i {
   width: 25px;
   height: 25px;
 }
 .social {
-
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 5px;
   font-size: 28px;
-   
-
 }
 
 .social a {
-
-
   text-decoration: none;
   margin: 10px;
-
 }
 
-.social:hover a i{
-
+.social:hover a i {
   opacity: 0.3;
   transition: 0.5s;
-
 }
 
-.social:hover a:hover i:hover{
-color: var(--cyan);
+.social:hover a:hover i:hover {
+  color: var(--cyan);
   opacity: 1;
   transition: 0.5s;
-
 }
 
 .contato {
@@ -446,7 +419,6 @@ color: var(--cyan);
   gap: 15px;
   transition: all 0.5s ease;
   margin-bottom: 100px;
-
 }
 
 .contato p {
@@ -484,12 +456,9 @@ color: var(--cyan);
   main {
     order: 1;
   }
-  .hero{
-      background: url("images/bg-curvy-mobile.svg") no-repeat bottom;
- background-color: hsl(217, 28%, 15%);
-
-    
-
+  .hero {
+    background: url("images/bg-curvy-mobile.svg") no-repeat bottom;
+    background-color: hsl(217, 28%, 15%);
   }
   aside {
     order: 2;
@@ -562,6 +531,9 @@ color: var(--cyan);
     background-color: black;
   }
 }
+
+
+
 @media only screen and (max-width: 600px) {
   .card2 {
     width: 90vw; /* Usa quase toda a tela menor */
@@ -638,6 +610,13 @@ color: var(--cyan);
   }
 }
 
+  .finish a img {         
+    width: 10vw;
+  }
+ .texto {
+    align-items: center; /* centraliza os filhos do .texto */
+    text-align: center;
+  }
 
 /* Tela pequena - celulares até 600px */
 @media (max-width: 600px) {
@@ -721,14 +700,16 @@ color: var(--cyan);
   }
 
   .finish {
-    flex-direction: column;
+    display: grid;
     padding: 10px;
+    justify-items: center; /* alinha os itens horizontalmente */
+    text-align: center; /* centraliza o texto */
+    grid-template-columns: 1fr; /* muda para uma coluna */
   }
 
-  .finish img {
-    width: 90vw;
-    height: auto;
-    margin-bottom: 15px;
+ 
+  .finish a img {
+    width: 10vw;
   }
 
   .texto {
