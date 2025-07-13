@@ -7,14 +7,13 @@
   <title>Front-end Mentor</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
-
 </head>
 
 <body>
   <header>
     <a href="" id="logo"><img src="images/logo.svg" alt="logo" /></a>
 
-    <nav id="menu">
+    <nav id="menu" aria-label="Menu principal">
       <a href="#">Features</a>
       <a href="#">Team</a>
       <a href="#">Sign In</a>
@@ -24,7 +23,7 @@
   <main>
     <section class="hero">
       <div>
-        <img src="images/illustration-intro.png" alt="" />
+        <img src="images/illustration-intro.png" alt="" aria-hidden="true" />
       </div>
 
       <div class="text">
@@ -38,13 +37,13 @@
           family, and co-workers.
         </p>
 
-        <button>Get Started</button>
+        <button aria-label="Começar agora">Get Started</button>
       </div>
     </section>
 
     <section class="services">
       <div class="card">
-        <img src="images/icon-access-anywhere.svg" alt="" />
+        <img src="images/icon-access-anywhere.svg" alt="" aria-hidden="true" />
         <h2>Access your files, anywhere</h2>
         <p>
           The ability to use a smartphone, tablet, or computer to access your
@@ -53,7 +52,7 @@
       </div>
 
       <div class="card">
-        <img src="images/icon-security.svg" alt="" />
+        <img src="images/icon-security.svg" alt="" aria-hidden="true" />
         <h2>Security you can trust</h2>
         <p>
           2-factor authentication and user-controlled encryption are just a
@@ -62,7 +61,7 @@
       </div>
 
       <div class="card">
-        <img src="images/icon-collaboration.svg" alt="" />
+        <img src="images/icon-collaboration.svg" alt="" aria-hidden="true" />
         <h2>Real-time collaboration</h2>
         <p>
           Securely share files and folders with friends, family and colleagues
@@ -71,7 +70,7 @@
       </div>
 
       <div class="card">
-        <img src="images/icon-any-file.svg" alt="" />
+        <img src="images/icon-any-file.svg" alt="" aria-hidden="true" />
         <h2>Store any type of file</h2>
         <p>
           Whether you're sharing holidays photos or work documents, Fylo has
@@ -82,7 +81,7 @@
     </section>
 
     <section class="finish">
-      <img src="images/illustration-stay-productive.png" alt="" />
+      <img src="images/illustration-stay-productive.png" alt="" aria-hidden="true" />
 
       <div class="texto">
         <h1>
@@ -97,12 +96,12 @@
         </p>
 
         <a href="">
-          See how Fylo works <img src="images/icon-arrow.svg" alt="" /></a>
+          See how Fylo works <img src="images/icon-arrow.svg" alt="" aria-hidden="true" /></a>
       </div>
     </section>
 
     <section class="depoimentos">
-      <img id="aspas" src="images/bg-quotes.png" alt="" />
+      <img id="aspas" src="images/bg-quotes.png" alt="" aria-hidden="true" />
       <div class="card2">
         <p>
           Fylo has improved our team productivity by an order of magnitude.
@@ -110,7 +109,7 @@
           collaboration machine.
         </p>
         <div class="perfil">
-          <img src="images/profile-1.jpg" alt="" />
+          <img src="images/profile-1.jpg" alt="Foto de Satish Patel" />
           <p>
             <strong>Satish Patel</strong> <br />
             Founder & CEO, Huddle
@@ -125,7 +124,7 @@
           collaboration machine.
         </p>
         <div class="perfil">
-          <img src="images/profile-2.jpg" alt="" />
+          <img src="images/profile-2.jpg" alt="Foto de Bruce McKenzie" />
           <p>
             <strong> Bruce McKenzie</strong> <br />
             Founder & CEO, Huddle
@@ -140,7 +139,7 @@
           collaboration machine.
         </p>
         <div class="perfil">
-          <img src="images/profile-3.jpg" alt="" />
+          <img src="images/profile-3.jpg" alt="Foto de Iva Boyd" />
           <p>
             <strong>Iva Boyd</strong> <br />
             Founder & CEO, Huddle
@@ -150,58 +149,41 @@
     </section>
 
     <span class="contato" id="popup-contato">
-
-
+      <button id="fechar-popup" aria-label="Fechar popup" style="align-self: flex-end;">✕</button>
 
       <h1> Get early access today</h1>
       <p> It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
         questions, our support team would be happy to help you.</p>
 
       <div class="form">
-        <input type="email" id="email" name="email" />
-        <button>Get Started For Free</button>
+        <input type="email" id="email" name="email" aria-label="Digite seu e-mail" />
+        <button aria-label="Inscrever-se gratuitamente">Get Started For Free</button>
       </div>
-
     </span>
-
   </main>
-
-
-
-
 
   <footer>
     <div class="footer-content">
 
-
-
-
       <div class="footer-logo">
         <div><img src="images/logo.svg" alt="logo" /></div>
 
-
         <div class="txt">
-          <img src="images/icon-location.svg" alt="" />
+          <img src="images/icon-location.svg" alt="" aria-hidden="true" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
         </div>
-
-
       </div>
 
       <div class="contacts">
-        <a href=""><img src="images/icon-phone.svg" alt="im" />+1-543-123-4567 <br />
+        <a href=""><img src="images/icon-phone.svg" alt="Telefone" />+1-543-123-4567 <br />
         </a>
-        <a href=""><img src="images/icon-email.svg" alt="" /> example@fylo.com</a>
-
+        <a href=""><img src="images/icon-email.svg" alt="Email" /> example@fylo.com</a>
       </div>
 
-      <nav class="footer-menu">
-
-
-
+      <nav class="footer-menu" aria-label="Menu do rodapé">
         <div class="footer-nav">
           <ul>
             <li><a href="#">About Us</a></li>
@@ -211,9 +193,6 @@
           </ul>
         </div>
 
-
-
-
         <div class="footer-links">
           <ul>
             <li><a href="#">Contact Us</a></li>
@@ -222,49 +201,49 @@
           </ul>
         </div>
 
-
-<div class="social">
-
-        <a href="#" target="_blank">
-          <i class="fab fa-facebook-f"></i></i>
-        </a>
-
-        <a href="#" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-
-        <a href="#" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-        
-     
-
-    </div>
-
-
-
+        <div class="social">
+          <a href="#" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
       </nav>
-
-
     </div>
-
   </footer>
+
   <script>
-    const popupContato = document.getElementById("popup-contato");
-    const footer = document.querySelector("footer");
+  const popupContato = document.getElementById("popup-contato");
+  const footer = document.querySelector("footer");
+  const fecharPopup = document.getElementById("fechar-popup");
 
-    window.addEventListener("scroll", () => {
-      const footerTop = footer.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
+  let popupFechado = false; // variável em memória para controlar estado
 
-      if (footerTop <= windowHeight) {
-        popupContato.style.opacity = "1";
-        popupContato.style.transform = "translateY(0)";
-        popupContato.style.pointerEvents = "auto";
-      }
-    });
-  </script>
+  window.addEventListener("scroll", () => {
+    if (popupFechado) return; // se já fechou, não mostra mais
 
+    const footerTop = footer.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (footerTop <= windowHeight) {
+      popupContato.style.opacity = "1";
+      popupContato.style.transform = "translateY(0)";
+      popupContato.style.pointerEvents = "auto";
+    }
+  });
+
+  fecharPopup.addEventListener("click", () => {
+    popupContato.style.opacity = "0";
+    popupContato.style.transform = "translateY(50px)";
+    popupContato.style.pointerEvents = "none";
+
+    popupFechado = true; // marca que fechou
+  });
+</script>
 
 </body>
 

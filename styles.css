@@ -11,6 +11,13 @@
 
  .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+  transition: outline 0.2s ease;
+}
 
 :root{
 --dark-blue:  hsl(217, 28%, 15%);
@@ -32,8 +39,8 @@
 
 body {
 background-color: var(--dark-blue);
-  color: var();
-  font-family: 'Opens Sans';
+  color: var(--white);
+  font-family: 'Open Sans';
   line-height: 1.6;
 }
 
@@ -277,7 +284,7 @@ footer {
   color: white;
   padding: 40px 20px;
   font-size: 10px;
-  height: 500px;
+
   width: 100% ;
   align-items: center;
   display: flex;
@@ -628,5 +635,204 @@ color: var(--cyan);
 
   .redes-sociais {
     justify-content: flex-start;
+  }
+}
+
+
+/* Tela pequena - celulares até 600px */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  #logo img {
+    width: 120px;
+  }
+
+  nav#menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+
+  nav#menu a {
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 10px 5px;
+  }
+
+  .hero {
+    min-height: auto;
+    background-size: cover;
+    padding: 20px 10px;
+  }
+
+  .hero img {
+    width: 80vw;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .text h1 {
+    font-size: 24px;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+
+  .text button {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .card img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+
+  .finish {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .finish img {
+    width: 90vw;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .texto {
+    width: 100%;
+    padding: 0 10px;
+    font-size: 16px;
+  }
+
+  .depoimentos {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .card2 {
+    width: 90vw;
+    height: auto;
+    margin-top: 0;
+    padding: 15px;
+  }
+
+  .perfil img {
+    width: 60px;
+    height: 60px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 20px 10px;
+    font-size: 14px;
+    height: auto;
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-logo,
+  .contacts,
+  .footer-menu {
+    width: 100%;
+    max-width: none;
+  }
+
+  .footer-nav ul,
+  .footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .footer-nav ul li,
+  .footer-links ul li {
+    white-space: nowrap;
+  }
+
+  .social {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+/* Tablets e telas médias - até 923px */
+@media (max-width: 923px) and (min-width: 601px) {
+  main {
+    flex-direction: column;
+  }
+
+  .hero {
+    background: url("images/bg-curvy-mobile.svg") no-repeat bottom;
+    background-color: var(--dark-blue);
+    min-height: auto;
+  }
+
+  aside {
+    order: 2;
+    flex: 1 1 100vw;
+  }
+
+  footer {
+    order: 3;
+  }
+
+  .depoimentos {
+    flex-direction: column;
+  }
+
+  .card2 {
+    width: 90vw;
+    height: auto;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  #aspas {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40px;
+    max-width: none;
+    margin: 10px 0;
   }
 }
